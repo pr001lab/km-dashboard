@@ -1,0 +1,23 @@
+@import '../../../styles/_vars.scss';
+
+.heading {
+  margin: 0;
+}
+
+h1 {
+  color: $text-heading;
+  font-family: $headingFontFamily;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  color: $text-heading;
+  font-family: $headingFontFamily;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

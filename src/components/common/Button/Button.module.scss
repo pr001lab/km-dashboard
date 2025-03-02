@@ -1,0 +1,31 @@
+@import '../../../styles/_vars.scss';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  width: 95px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+
+  color: $white;
+  text-align: center;
+  font-family: $headingFontFamily;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 600;
+  background-color: $green-light;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.table-header {
+  background: none;
+}

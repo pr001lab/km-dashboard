@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+$white: #ffffff;
+$black: #000000;
+$blue-light: #c2c2ff;
+$blue: #8686ff;
+$blue-dark: #8686ff;
+$red-light: #fe4848;
+$red: #ff8346;
+$red-dark: #e14165;
+$text-primary: #474747;
+$text-second: #5c5c5c;
+$text-third: #999999;
+$text-heading: #222222;
+$green-light: #2ee5ac;
+$green: #1bda9d;
+$gray-light: #fafafa;
+$gray: #d1d1d1;
+$gray-dark: #7d7d7d;
+
+//"#EBEBEB#2EE5AC"
+
+$defaultFontFamily: 'Roboto', 'Arial', sans-serif;
+$headingFontFamily: 'Montserrat', 'Arial', sans-serif;
+$linkFontFamily: 'Nunito', 'Arial', sans-serif;
+$defaultFontSize: 14px;
+$defaultBackgroundColor: $white;
+$defaultTextColor: $black;
+$defaultLineHeight: 1.2;

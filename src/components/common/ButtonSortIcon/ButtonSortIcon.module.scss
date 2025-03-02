@@ -1,0 +1,35 @@
+@import '../../../styles/_vars.scss';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 10px;
+
+  color: #999;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 10px;
+  background: none;
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &.None svg {
+    display: none;
+  }
+
+  &.Ascending svg {
+    rotate: 180deg;
+  }
+
+  &.Descending svg {
+    rotate: 0deg;
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../../styles/_vars.scss';
+
+.link-button {
+  display: flex;
+  width: 95px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  color: $white;
+  text-align: center;
+  font-family: $headingFontFamily;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 600;
+  background-color: $green-light;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:active {
+    background-color: $green;
+  }
+}
+
+.gray-dark {
+  background-color: $gray-dark;
+
+  &:hover {
+    background-color: $gray;
+  }
+
+  &:active {
+    background-color: $gray;
+  }
+}

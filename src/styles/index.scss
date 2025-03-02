@@ -1,0 +1,30 @@
+@import '../../node_modules/reset-css/sass/_reset.scss';
+@import './_vars.scss';
+
+body {
+  height: 100vh;
+  font-family: $defaultFontFamily;
+  font-size: $defaultFontSize;
+  color: $defaultTextColor;
+  line-height: $defaultLineHeight;
+  padding: 41px 48px 49px 52px;
+  background-color: $gray-light;
+}
+
+#root {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}

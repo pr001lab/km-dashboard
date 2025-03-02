@@ -1,0 +1,119 @@
+@import '../../styles/_vars.scss';
+
+.wrapper {
+  flex-grow: 1;
+}
+
+.table {
+  font-family: $defaultFontFamily;
+  display: flex;
+  flex-direction: column;
+
+  & thead {
+    text-align: left;
+    color: #999;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+    & .table-header {
+      padding: 10px;
+      width: unset;
+      height: unset;
+      background: none;
+    }
+  }
+
+  & tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4px 1fr 115px 106px 167px 95px;
+    align-items: center;
+    gap: 10px;
+    padding-right: 12px;
+  }
+
+  & tbody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  & tbody tr {
+    color: #5c5c5c;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 500;
+    min-height: 70px;
+    border-radius: 3px;
+    background: #fff;
+
+    & .row-indicator {
+      height: 100%;
+      width: 4px;
+      border-radius: 3px 0 0 3px;
+
+      &.siteId-1 {
+        background: #e14165;
+      }
+
+      &.siteId-2 {
+        background: #c2c2ff;
+      }
+
+      &.siteId-3 {
+        background: #8686ff;
+      }
+    }
+
+    & .row-name {
+      color: #474747;
+      font-size: 13px;
+    }
+
+    & .row-type {
+      font-weight: 400;
+    }
+
+    & .row-status {
+      &.ONLINE {
+        color: #1bda9d;
+      }
+
+      &.PAUSED,
+      &.STOPPED {
+        color: #ff8346;
+      }
+    }
+
+    & .row-site {
+      font-weight: 400;
+    }
+
+    & td {
+      padding: 15px 0;
+    }
+  }
+
+  & tbody tr:hover {
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+.link-back {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.link-back span {
+  color: $text-heading;
+  font-family: $linkFontFamily;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
