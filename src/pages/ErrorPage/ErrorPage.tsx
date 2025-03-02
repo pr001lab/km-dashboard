@@ -1,4 +1,4 @@
-import styles from './ErrorPage.module.css';
+import styles from './ErrorPage.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import Heading from '../../components/common/Heading/Heading';
 

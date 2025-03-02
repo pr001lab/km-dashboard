@@ -25,7 +25,7 @@
   height: 45px;
   border-radius: 15px;
   border: 1px solid #ebebeb;
-  background: #fff;
+  background: $white;
   margin-top: 40px;
   margin-bottom: 30px;
 
@@ -57,7 +57,7 @@
 
 input {
   font-family: $defaultFontFamily;
-  color: #474747;
+  color: $text-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
@@ -82,14 +82,14 @@ input {
 
   & thead {
     text-align: left;
-    color: #999;
+    color: $text-third;
     font-size: 11px;
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
 
     & .table-header {
-      color: #999;
+      color: $text-third;
       font-size: 11px;
       font-weight: 500;
       line-height: normal;
@@ -118,13 +118,13 @@ input {
   }
 
   & tbody tr {
-    color: #5c5c5c;
+    color: $text-second;
     font-size: 12px;
     line-height: normal;
     font-weight: 500;
     min-height: 70px;
     border-radius: 3px;
-    background: #fff;
+    background: $white;
 
     & .row-indicator {
       height: 100%;
@@ -132,20 +132,20 @@ input {
       border-radius: 3px 0 0 3px;
 
       &.siteId-1 {
-        background: #e14165;
+        background: $red-dark;
       }
 
       &.siteId-2 {
-        background: #c2c2ff;
+        background: $blue-light;
       }
 
       &.siteId-3 {
-        background: #8686ff;
+        background: $blue-dark;
       }
     }
 
     & .row-name {
-      color: #474747;
+      color: $text-primary;
       font-size: 13px;
     }
 
@@ -155,12 +155,12 @@ input {
 
     & .row-status {
       &.ONLINE {
-        color: #1bda9d;
+        color: $green;
       }
 
       &.PAUSED,
       &.STOPPED {
-        color: #ff8346;
+        color: $red;
       }
     }
 
@@ -174,7 +174,7 @@ input {
   }
 
   & tbody tr:hover {
-    background: #fff;
+    background: $white;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   }
 }

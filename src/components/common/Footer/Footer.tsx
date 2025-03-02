@@ -1,4 +1,4 @@
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
 import { FooterProps } from './Footer.props';
 import cn from 'classnames';
 

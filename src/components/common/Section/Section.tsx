@@ -1,4 +1,4 @@
-import styles from './Section.module.css';
+import styles from './Section.module.scss';
 import { SectionProps } from './Section.props';
 import cn from 'classnames';
 

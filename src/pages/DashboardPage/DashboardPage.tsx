@@ -20,13 +20,6 @@ import ButtonSortIcon from '../../components/common/ButtonSortIcon/ButtonSortIco
 import Loader from '../../components/common/Loader/Loader';
 import Button from '../../components/common/Button/Button';
 
-// import colorsHTML from './colors.js';
-// let textColors = Array.from(
-//   new Set(colorsHTML.match(/(white|black|red|green|blue|yellow)(?=[;"])/gi)),
-// );
-// let hexColors = Array.from(new Set(colorsHTML.match(/#[a-f0-9]{6}\b/gi)));
-// console.log('colors:', [...textColors, ...hexColors]);
-
 function DashboardPage() {
   const [loading, setLoading] = useState<boolean>(false);
   const [tests, setTests] = useState<Test[]>([]);

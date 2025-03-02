@@ -1,4 +1,4 @@
-import styles from './Wrapper.module.css';
+import styles from './Wrapper.module.scss';
 import { WrapperProps } from './Wrapper.props';
 import cn from 'classnames';
 
