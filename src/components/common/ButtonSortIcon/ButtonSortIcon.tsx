@@ -10,7 +10,6 @@ function ButtonSortIcon({
   sortOrder = SortEnum.None,
   onClick,
   className,
-  ...props
 }: ButtonSortIconProps) {
   const cl = cn(styles['button'], className, styles[sortOrder]);
 
