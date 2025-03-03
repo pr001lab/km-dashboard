@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Разработка пользовательского интерфейса страницу панели управления, на которой отображается список созданных A/B-тестов.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Технические требования
 
-## Available Scripts
+* Для выполнения этой задачи вам следует использовать create-react-app шаблон приложения (docs).
+* Вам не разрешается использовать какие-либо внешние библиотеки, кроме node-sass, axios, classnames, react-router-dom,
+  prop-types;
+* Вы можете использовать prop-types библиотеку, если вы ею не пользуетесь TypeScript.
+* Продемонстрируйте использование React hooks.
+* Вы можете использовать css или scss по вашему выбору.
 
-In the project directory, you can run:
+## Требования к функциональности
 
-### `npm start`
+Приложение представляет собой страницу панели управления, на которой отображается список созданных A/B-тестов.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Таблица заполняется данными, которые запрашиваются из файла JSON с помощью API в указанном репозитории. Вам нужно
+  клонировать проект на свой локальный компьютер и запустить его.
+* Когда пользователь наводит курсор на строку таблицы, она должна выделяться, как показано на макете.
+* Сайты в соответствующем столбце должны отображаться без протоколов http или https и префикса www.
+* Пользователь должен иметь возможность фильтровать по названию товара. Если товар существует, мы скрываем другие записи
+  и показываем только те товары, которые были найдены в списке. Если записи не найдены, должно отображаться сообщение с
+  соответствующим текстом и кнопкой сброса.
+* Пользователь должен иметь возможность сортировать (ASC, DESC), нажимая на заголовки столбцов:
+  * name, type и site должны быть отсортированы в алфавитном порядке
+  * status должны быть отсортированы в:
+    * ASC: Онлайн, Приостановлено, Остановленный, Черновик
+    * DESC: Черновик, Остановлен, Приостановлено, Онлайн
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Дополнительные задачи
 
-### `npm test`
+* Используя библиотеку react-router-dom, реализуйте маршрутизацию между тремя страницами: dashboard, results и finalize.
+  И не забудьте загрузить необходимые данные для каждой страницы.
+* Когда пользователь нажимает на кнопку Results или Finalize на странице панели управления, вы должны перенаправить его
+  на URL-адреса /results/[testId] и /finalize/[testId] соответственно без перезагрузки окна браузера.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Инструменты
 
-### `npm run build`
+frontend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React 18/TypeScript
+- REST API/Axios
+- NodeJS v20
+- SCSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Установка и запуск
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Для установки необходимо клонировать репозиторий на свой компьютер.
+2. Запустить установку необходимых пакетов командой `npm i`.
+3. Запустить приложение командой `npm run start`.
+4. Приложение доступно по адрессу
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- frontend: `http://localhost:3000`
