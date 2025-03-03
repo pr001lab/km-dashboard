@@ -41,4 +41,6 @@ export enum fieldSort {
   STATUS = 'status',
 }
 
+export const tableColumns = ['name', 'type', 'status', 'site'];
+
 export const orderSortStatus = ['ONLINE', 'PAUSED', 'STOPPED', 'DRAFT'];

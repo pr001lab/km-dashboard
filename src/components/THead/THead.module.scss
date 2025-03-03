@@ -1,0 +1,36 @@
+@import '../../styles/_vars.scss';
+
+thead {
+  text-align: left;
+  color: $text-third;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+
+  & tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4px 1fr 115px 106px 167px 95px;
+    align-items: center;
+    gap: 10px;
+    padding-right: 12px;
+  }
+
+  & .table-header {
+    color: $text-third;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 0;
+    width: unset;
+    height: unset;
+    background: none;
+  }
+
+  & .table-header:hover {
+    background: none;
+  }
+}

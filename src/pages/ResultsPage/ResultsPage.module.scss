@@ -4,6 +4,11 @@
   flex-grow: 1;
 }
 
+h2 {
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
 .table {
   font-family: $defaultFontFamily;
   display: flex;
@@ -23,7 +28,7 @@
       font-weight: 500;
       line-height: normal;
       text-transform: uppercase;
-      padding: 10px;
+      padding-bottom: 10px;
       width: unset;
       height: unset;
       background: none;
@@ -38,87 +43,19 @@
     gap: 10px;
     padding-right: 12px;
   }
-
-  & tbody {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-  }
-
-  & tbody tr {
-    color: $text-second;
-    font-size: 12px;
-    line-height: normal;
-    font-weight: 500;
-    min-height: 70px;
-    border-radius: 3px;
-    background: $white;
-
-    & .row-indicator {
-      height: 100%;
-      width: 4px;
-      border-radius: 3px 0 0 3px;
-
-      &.siteId-1 {
-        background: $red-dark;
-      }
-
-      &.siteId-2 {
-        background: $blue-light;
-      }
-
-      &.siteId-3 {
-        background: $blue-dark;
-      }
-    }
-
-    & .row-name {
-      color: $text-primary;
-      font-size: 13px;
-    }
-
-    & .row-type {
-      font-weight: 400;
-    }
-
-    & .row-status {
-      &.ONLINE {
-        color: $green;
-      }
-
-      &.PAUSED,
-      &.STOPPED {
-        color: $red;
-      }
-    }
-
-    & .row-site {
-      font-weight: 400;
-    }
-
-    & td {
-      padding: 15px 0;
-    }
-  }
-
-  & tbody tr:hover {
-    background: $white;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
-  }
 }
 
 .link-back {
   display: flex;
   align-items: center;
   gap: 5px;
-}
 
-.link-back span {
-  color: $text-heading;
-  font-family: $linkFontFamily;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  & span {
+    color: $text-heading;
+    font-family: $linkFontFamily;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 }

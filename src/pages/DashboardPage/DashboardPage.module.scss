@@ -27,7 +27,7 @@
   border: 1px solid #ebebeb;
   background: $white;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   & .label-input {
     display: flex;
@@ -79,102 +79,4 @@ input {
   font-family: $defaultFontFamily;
   display: flex;
   flex-direction: column;
-
-  & thead {
-    text-align: left;
-    color: $text-third;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-
-    & .table-header {
-      color: $text-third;
-      font-size: 11px;
-      font-weight: 500;
-      line-height: normal;
-      text-transform: uppercase;
-      padding: 10px;
-      width: unset;
-      height: unset;
-      background: none;
-    }
-  }
-
-  & tr {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 4px 1fr 115px 106px 167px 95px;
-    align-items: center;
-    gap: 10px;
-    padding-right: 12px;
-  }
-
-  & tbody {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-  }
-
-  & tbody tr {
-    color: $text-second;
-    font-size: 12px;
-    line-height: normal;
-    font-weight: 500;
-    min-height: 70px;
-    border-radius: 3px;
-    background: $white;
-
-    & .row-indicator {
-      height: 100%;
-      width: 4px;
-      border-radius: 3px 0 0 3px;
-
-      &.siteId-1 {
-        background: $red-dark;
-      }
-
-      &.siteId-2 {
-        background: $blue-light;
-      }
-
-      &.siteId-3 {
-        background: $blue-dark;
-      }
-    }
-
-    & .row-name {
-      color: $text-primary;
-      font-size: 13px;
-    }
-
-    & .row-type {
-      font-weight: 400;
-    }
-
-    & .row-status {
-      &.ONLINE {
-        color: $green;
-      }
-
-      &.PAUSED,
-      &.STOPPED {
-        color: $red;
-      }
-    }
-
-    & .row-site {
-      font-weight: 400;
-    }
-
-    & td {
-      padding: 15px 0;
-    }
-  }
-
-  & tbody tr:hover {
-    background: $white;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
-  }
 }

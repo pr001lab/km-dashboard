@@ -1,61 +1,21 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Heading from '../../components/common/Heading/Heading';
-import axios from 'axios';
-import {
-  API,
-  APIRoute,
-  AppRoute,
-  fieldSort,
-  orderSortStatus,
-  SortEnum,
-  Type,
-} from '../../constant';
-import { Site, Test } from '../../types';
-import LinkButton from '../../components/common/LinkButton/LinkButton';
+import { fieldSort, orderSortStatus, SortEnum } from '../../constant';
+import { Test } from '../../types';
 import styles from '../DashboardPage/DashboardPage.module.scss';
 import Wrapper from '../../components/common/Wrapper/Wrapper';
 import { ReactComponent as Search } from '../../assets/icons/Search.svg';
-import { getTextTransformCapitalize } from '../../utils';
-import ButtonSortIcon from '../../components/common/ButtonSortIcon/ButtonSortIcon';
 import Loader from '../../components/common/Loader/Loader';
 import Button from '../../components/common/Button/Button';
+import { useGetData } from '../../hooks/useGetData';
+import TBody from '../../components/TBody/TBody';
+import THead from '../../components/THead/THead';
 
 function DashboardPage() {
-  const [loading, setLoading] = useState<boolean>(false);
-  const [tests, setTests] = useState<Test[]>([]);
+  const { tests, loading } = useGetData();
   const [search, setSearch] = useState('');
   const [sortOrder, setSortOrder] = useState<SortEnum>(SortEnum.None);
   const [sortName, setSortName] = useState<string>('name');
-
-  useEffect(() => {
-    setLoading(true);
-    Promise.all([getSites(), getTests()])
-      .then(([sitesResponse, testsResponse]) => {
-        const tests = testsResponse.map((test) => {
-          const site = sitesResponse.find((site) => site.id === test.siteId);
-          test.siteUrl =
-            site?.url && new URL(site?.url).hostname.replace(/^www\./, '');
-          return test;
-        });
-
-        setTests(tests);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-        setLoading(false);
-      });
-  }, []);
-
-  const getSites = async () => {
-    const { data } = await axios.get<Site[]>(`${API}/${APIRoute.Sites}`);
-    return data;
-  };
-
-  const getTests = async () => {
-    const { data } = await axios.get<Test[]>(`${API}/${APIRoute.Tests}`);
-    return data;
-  };
 
   const testFilter = (test: Test) => {
     if (search === '') {
@@ -99,6 +59,8 @@ function DashboardPage() {
     }
   };
 
+  const testResults = tests.filter(testFilter).slice().sort(sortData);
+
   if (loading) {
     return <Loader />;
   }
@@ -116,9 +78,9 @@ function DashboardPage() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <Wrapper className={styles['input-info']}>{`${
-          tests.filter(testFilter).length
-        } tests`}</Wrapper>
+        <Wrapper className={styles['input-info']}>
+          {`${tests.filter(testFilter).length} tests`}
+        </Wrapper>
       </Wrapper>
       {tests.filter(testFilter).length === 0 && (
         <Wrapper className={styles['page-info']}>
@@ -130,87 +92,8 @@ function DashboardPage() {
       )}
       {tests.filter(testFilter).length > 0 && (
         <table className={styles['table']}>
-          <thead>
-            <tr>
-              <th></th>
-              <th>
-                <ButtonSortIcon
-                  className={styles['table-header']}
-                  onClick={() => setSort('name')}
-                  sortOrder={sortName === 'name' ? sortOrder : SortEnum.None}
-                >
-                  Name
-                </ButtonSortIcon>
-              </th>
-              <th>
-                <ButtonSortIcon
-                  className={styles['table-header']}
-                  onClick={() => setSort('type')}
-                  sortOrder={sortName === 'type' ? sortOrder : SortEnum.None}
-                >
-                  Type
-                </ButtonSortIcon>
-              </th>
-              <th>
-                <ButtonSortIcon
-                  className={styles['table-header']}
-                  onClick={() => setSort('status')}
-                  sortOrder={sortName === 'status' ? sortOrder : SortEnum.None}
-                >
-                  Status
-                </ButtonSortIcon>
-              </th>
-              <th>
-                <ButtonSortIcon
-                  className={styles['table-header']}
-                  onClick={() => setSort('siteUrl')}
-                  sortOrder={sortName === 'siteUrl' ? sortOrder : SortEnum.None}
-                >
-                  Site
-                </ButtonSortIcon>
-              </th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {tests
-              .filter(testFilter)
-              .slice()
-              .sort(sortData)
-              .map((test) => {
-                const { id, name, type, status, siteId, siteUrl } = test;
-                const indicatorColor = `siteId-${siteId}`;
-                const typeTransform = [Type.MVT].includes(type)
-                  ? type
-                  : getTextTransformCapitalize(type).replace(/[_]/g, '-');
-                const linkTo =
-                  status === 'DRAFT'
-                    ? `${AppRoute.FinalizeTestId}/${id}`
-                    : `${AppRoute.ResultsTestId}/${id}`;
-
-                return (
-                  <tr className={styles['row-table']} key={id}>
-                    <td
-                      className={`${styles['row-indicator']} ${styles[indicatorColor]}`}
-                    ></td>
-                    <td className={styles['row-name']}>{name}</td>
-                    <td className={styles['row-type']}>{typeTransform}</td>
-                    <td className={`${styles['row-status']} ${styles[status]}`}>
-                      {getTextTransformCapitalize(status)}
-                    </td>
-                    <td className={styles['row-site']}>{siteUrl}</td>
-                    <td>
-                      <LinkButton
-                        to={linkTo}
-                        className={status === 'DRAFT' ? 'gray-dark' : ''}
-                      >
-                        {status === 'DRAFT' ? 'Finalize' : 'Results'}
-                      </LinkButton>
-                    </td>
-                  </tr>
-                );
-              })}
-          </tbody>
+          <THead sortName={sortName} sortOrder={sortOrder} setSort={setSort} />
+          <TBody tests={testResults} />
         </table>
       )}
     </>
