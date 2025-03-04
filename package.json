@@ -2,7 +2,6 @@
   "name": "km-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pr001lab.github.io/km-dashboard",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
