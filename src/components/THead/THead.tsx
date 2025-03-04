@@ -5,8 +5,8 @@ import ButtonSortIcon from '../common/ButtonSortIcon/ButtonSortIcon';
 import { getTextTransformCapitalize } from '../../utils';
 import Wrapper from '../common/Wrapper/Wrapper';
 
-function THead({ sortName, sortOrder, setSort }: THeadProps) {
-  if (setSort !== undefined) {
+function THead({ sortName, sortOrder, setColSort }: THeadProps) {
+  if (setColSort !== undefined) {
     return (
       <thead>
         <tr>
@@ -15,7 +15,7 @@ function THead({ sortName, sortOrder, setSort }: THeadProps) {
             <th key={item}>
               <ButtonSortIcon
                 className={styles['table-header']}
-                onClick={() => setSort(item)}
+                onClick={() => setColSort(item)}
                 sortOrder={sortName === item ? sortOrder : SortEnum.None}
               >
                 {getTextTransformCapitalize(item)}

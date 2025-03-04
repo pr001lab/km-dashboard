@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Heading from '../../components/common/Heading/Heading';
 import { fieldSort, orderSortStatus, SortEnum } from '../../constant';
-import { Test } from '../../types';
 import styles from '../DashboardPage/DashboardPage.module.scss';
 import Wrapper from '../../components/common/Wrapper/Wrapper';
 import { ReactComponent as Search } from '../../assets/icons/Search.svg';
@@ -10,6 +9,7 @@ import Button from '../../components/common/Button/Button';
 import { useGetData } from '../../hooks/useGetData';
 import TBody from '../../components/TBody/TBody';
 import THead from '../../components/THead/THead';
+import { Test } from '../../types';
 
 function DashboardPage() {
   const { tests, loading } = useGetData();
@@ -47,15 +47,18 @@ function DashboardPage() {
     }
   };
 
-  const setSort = (sortFieldName: string) => {
-    if (sortOrder === SortEnum.None) {
-      setSortOrder(SortEnum.Ascending);
-      setSortName(sortFieldName);
-    } else if (sortOrder === SortEnum.Ascending) {
-      setSortOrder(SortEnum.Descending);
-      setSortName(sortFieldName);
+  const setColSort = (sortColName: string) => {
+    if (sortName === sortColName) {
+      if (sortOrder === SortEnum.None) {
+        setSortOrder(SortEnum.Ascending);
+      } else if (sortOrder === SortEnum.Ascending) {
+        setSortOrder(SortEnum.Descending);
+      } else {
+        setSortOrder(SortEnum.None);
+      }
     } else {
-      setSortOrder(SortEnum.None);
+      setSortName(sortColName);
+      setSortOrder(SortEnum.Ascending);
     }
   };
 
@@ -92,7 +95,11 @@ function DashboardPage() {
       )}
       {tests.filter(testFilter).length > 0 && (
         <table className={styles['table']}>
-          <THead sortName={sortName} sortOrder={sortOrder} setSort={setSort} />
+          <THead
+            sortName={sortName}
+            sortOrder={sortOrder}
+            setColSort={setColSort}
+          />
           <TBody tests={testResults} />
         </table>
       )}
