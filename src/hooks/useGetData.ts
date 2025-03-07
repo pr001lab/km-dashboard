@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Site, Test } from '../types';
 import { API, APIRoute } from '../constant';
+import { getNameUrl } from '../utils';
 
 export const useGetData = (id = '') => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -13,8 +14,7 @@ export const useGetData = (id = '') => {
       .then(([sitesResponse, testsResponse]) => {
         const tests = testsResponse.map((test) => {
           const site = sitesResponse.find((site) => site.id === test.siteId);
-          test.site =
-            site?.url && new URL(site?.url).hostname.replace(/^www\./, '');
+          test.site = site?.url && getNameUrl(site.url);
           return test;
         });
 

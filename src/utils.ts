@@ -37,3 +37,7 @@ export const getSortData =
       return 0;
     }
   };
+
+export const getNameUrl = (url: string) => {
+  return new URL(url).hostname.replace(/^www\./, '');
+};
