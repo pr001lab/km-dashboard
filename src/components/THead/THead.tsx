@@ -2,7 +2,7 @@ import styles from './THead.module.scss';
 import { THeadProps } from './THead.props';
 import { SortEnum, tableColumns } from '../../constant';
 import ButtonSortIcon from '../common/ButtonSortIcon/ButtonSortIcon';
-import { getTextTransformCapitalize } from '../../utils';
+import { getTextTransformCapitalize } from '../../utils/utils';
 import Wrapper from '../common/Wrapper/Wrapper';
 
 function THead({ sortName, sortOrder, setColSort }: THeadProps) {

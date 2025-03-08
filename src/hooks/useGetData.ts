@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Site, Test } from '../types';
 import { API, APIRoute } from '../constant';
-import { getNameUrl } from '../utils';
+import { getNameUrl } from '../utils/utils';
 
 export const useGetData = (id = '') => {
   const [loading, setLoading] = useState<boolean>(false);

@@ -1,5 +1,5 @@
-import { Test } from './types';
-import { fieldSort, orderSortStatus, SortEnum } from './constant';
+import { Test } from '../types';
+import { fieldSort, orderSortStatus, SortEnum } from '../constant';
 
 export const getTextTransformCapitalize = (word: string) => {
   return `${word[0].toUpperCase()}${word.slice(1).toLowerCase()}`;

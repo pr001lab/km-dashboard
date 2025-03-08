@@ -1,7 +1,7 @@
 import styles from './TBody.module.scss';
 import { TBodyProps } from './TBody.props';
 import { AppRoute, Type } from '../../constant';
-import { getTextTransformCapitalize } from '../../utils';
+import { getTextTransformCapitalize } from '../../utils/utils';
 import LinkButton from '../common/LinkButton/LinkButton';
 
 function TBody({ tests, className, ...props }: TBodyProps) {

@@ -4,8 +4,8 @@ import {
   getSortData,
   getTextTransformCapitalize,
 } from './utils';
-import { mockSites, mockTests } from '../mocks/mocks';
-import { fieldSort, SortEnum } from './constant';
+import { mockSites, mockTests } from '../../mocks/mocks';
+import { fieldSort, SortEnum } from '../constant';
 
 describe('validate Capitalized word', () => {
   test('getTextTransformCapitalize', () => {
