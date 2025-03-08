@@ -11,7 +11,7 @@ import THead from '../../components/THead/THead';
 import { Test } from '../../types';
 import { reducer } from './reducer';
 import Button from '../../components/common/Button/Button';
-import { getFilterData, getSortData } from '../../utils';
+import { getFilterData, getSortData } from '../../utils/utils';
 
 export const INITIAL_STATE = {
   colName: '',

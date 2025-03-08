@@ -2,6 +2,7 @@
 @import './_vars.scss';
 
 body {
+  min-width: 705px;
   height: 100vh;
   font-family: $defaultFontFamily;
   font-size: $defaultFontSize;

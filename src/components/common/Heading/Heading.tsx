@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 function Heading({
   children,
-  className,
+  className = '',
   level = 'h1',
   ...props
 }: HeadingProps) {
