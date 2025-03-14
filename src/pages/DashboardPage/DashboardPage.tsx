@@ -1,10 +1,9 @@
-import { useEffect, useReducer, useState } from 'react';
+import { useEffect, useMemo, useReducer, useState } from 'react';
 import Heading from '../../components/common/Heading/Heading';
 import { SortEnum } from '../../constant';
 import styles from '../DashboardPage/DashboardPage.module.scss';
 import Wrapper from '../../components/common/Wrapper/Wrapper';
 import { ReactComponent as Search } from '../../assets/icons/Search.svg';
-import Loader from '../../components/common/Loader/Loader';
 import { useGetData } from '../../hooks/useGetData';
 import TBody from '../../components/TBody/TBody';
 import THead from '../../components/THead/THead';
@@ -12,6 +11,7 @@ import { Test } from '../../types';
 import { reducer } from './reducer';
 import Button from '../../components/common/Button/Button';
 import { getFilterData, getSortData } from '../../utils/utils';
+import Loader from '../../components/common/Loader/Loader';
 
 export const INITIAL_STATE = {
   colName: '',
@@ -25,9 +25,11 @@ function DashboardPage() {
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
   const { colName, sortOrder } = state;
 
+  const memoTests = useMemo(() => tests, [tests]);
+
   useEffect(() => {
-    setDataTests(tests);
-  }, [tests]);
+    setDataTests(memoTests);
+  }, [memoTests]);
 
   const setFilteredData = (value: string): void => {
     setSearch(value);
