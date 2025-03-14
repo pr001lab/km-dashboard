@@ -18,6 +18,12 @@ export enum AppRoute {
   FinalizeTestId = '/finalize',
 }
 
+export enum TitlePageAppRoute {
+  Main = 'Dashboard',
+  Results = 'Results',
+  Finalize = 'Finalize',
+}
+
 export enum Type {
   CLASSIC = 'CLASSIC',
   SERVER_SIDE = 'SERVER_SIDE',
