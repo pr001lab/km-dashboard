@@ -31,24 +31,26 @@ describe('Router tests', () => {
 
   it('should render Loader for DashboardPage', () => {
     mockDataTests.loading = true;
-    renderWithRouter();
+    const view = renderWithRouter();
     const divs = screen.getAllByRole('generic');
     expect(divs[1].classList.contains('loading-container')).toBe(true);
+    expect(view).toMatchSnapshot();
   });
 
-  it('should render DashboardPage for the main path with data table', () => {
+  it('should render DashboardPage for the main path with data rowsTable', () => {
     mockDataTests.loading = false;
-    renderWithRouter();
-    const rows = screen.getAllByRole('row');
-
-    expect(rows).toHaveLength(mockTests.length + 1);
+    const view = renderWithRouter();
+    const rowsTable = screen.getAllByRole('row');
+    expect(rowsTable).toHaveLength(mockTests.length + 1);
+    expect(view).toMatchSnapshot();
   });
 
   it('should render DashboardPage for the main path without data table', () => {
     mockDataTests.tests = [];
-    renderWithRouter();
+    const view = renderWithRouter();
     expect(
       screen.getByText(/Your search did not match any results./i),
     ).toBeInTheDocument();
+    expect(view).toMatchSnapshot();
   });
 });

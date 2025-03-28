@@ -1,0 +1,906 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Router tests should render DashboardPage for the main path with data rowsTable 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h1
+        class="heading"
+      >
+        Dashboard
+      </h1>
+      <div
+        class="wrapper wrapper-input"
+      >
+        <label
+          class="label-input"
+          for="input"
+        >
+          <svg>
+            Search.svg
+          </svg>
+        </label>
+        <input
+          id="input"
+          placeholder="What test are you looking for?"
+          value=""
+        />
+        <div
+          class="wrapper input-info"
+        >
+          7 tests
+        </div>
+      </div>
+      <table
+        class="table"
+      >
+        <thead>
+          <tr>
+            <th />
+            <th>
+              <button
+                class="button button table-header None"
+              >
+                Name
+                <svg>
+                  Chevron-sm.svg
+                </svg>
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button table-header None"
+              >
+                Type
+                <svg>
+                  Chevron-sm.svg
+                </svg>
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button table-header None"
+              >
+                Status
+                <svg>
+                  Chevron-sm.svg
+                </svg>
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button table-header None"
+              >
+                Site
+                <svg>
+                  Chevron-sm.svg
+                </svg>
+              </button>
+            </th>
+            <th />
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="row-table"
+          >
+            <td
+              class="row-indicator siteId-2"
+            />
+            <td
+              class="row-name"
+            >
+              Prototype of the new map
+            </td>
+            <td
+              class="row-type"
+            >
+              Classic
+            </td>
+            <td
+              class="row-status PAUSED"
+            >
+              Paused
+            </td>
+            <td
+              class="row-site"
+            />
+            <td>
+              <a
+                class="link-button"
+                href="/results/1"
+              >
+                Results
+              </a>
+            </td>
+          </tr>
+          <tr
+            class="row-table"
+          >
+            <td
+              class="row-indicator siteId-3"
+            />
+            <td
+              class="row-name"
+            >
+              Dark theme test
+            </td>
+            <td
+              class="row-type"
+            >
+              MVT
+            </td>
+            <td
+              class="row-status DRAFT"
+            >
+              Draft
+            </td>
+            <td
+              class="row-site"
+            />
+            <td>
+              <a
+                class="link-button gray-dark"
+                href="/finalize/2"
+              >
+                Finalize
+              </a>
+            </td>
+          </tr>
+          <tr
+            class="row-table"
+          >
+            <td
+              class="row-indicator siteId-1"
+            />
+            <td
+              class="row-name"
+            >
+              New Year's Sale
+            </td>
+            <td
+              class="row-type"
+            >
+              MVT
+            </td>
+            <td
+              class="row-status STOPPED"
+            >
+              Stopped
+            </td>
+            <td
+              class="row-site"
+            />
+            <td>
+              <a
+                class="link-button"
+                href="/results/3"
+              >
+                Results
+              </a>
+            </td>
+          </tr>
+          <tr
+            class="row-table"
+          >
+            <td
+              class="row-indicator siteId-1"
+            />
+            <td
+              class="row-name"
+            >
+              Order basket redesing
+            </td>
+            <td
+              class="row-type"
+            >
+              Classic
+            </td>
+            <td
+              class="row-status ONLINE"
+            >
+              Online
+            </td>
+            <td
+              class="row-site"
+            />
+            <td>
+              <a
+                class="link-button"
+                href="/results/4"
+              >
+                Results
+              </a>
+            </td>
+          </tr>
+          <tr
+            class="row-table"
+          >
+            <td
+              class="row-indicator siteId-2"
+            />
+            <td
+              class="row-name"
+            >
+              Spring promotion
+            </td>
+            <td
+              class="row-type"
+            >
+              Server-side
+            </td>
+            <td
+              class="row-status DRAFT"
+            >
+              Draft
+            </td>
+            <td
+              class="row-site"
+            />
+            <td>
+              <a
+                class="link-button gray-dark"
+                href="/finalize/5"
+              >
+                Finalize
+              </a>
+            </td>
+          </tr>
+          <tr
+            class="row-table"
+          >
+            <td
+              class="row-indicator siteId-3"
+            />
+            <td
+              class="row-name"
+            >
+              Prototype of a new header
+            </td>
+            <td
+              class="row-type"
+            >
+              Server-side
+            </td>
+            <td
+              class="row-status ONLINE"
+            >
+              Online
+            </td>
+            <td
+              class="row-site"
+            />
+            <td>
+              <a
+                class="link-button"
+                href="/results/6"
+              >
+                Results
+              </a>
+            </td>
+          </tr>
+          <tr
+            class="row-table"
+          >
+            <td
+              class="row-indicator siteId-1"
+            />
+            <td
+              class="row-name"
+            >
+              New Year's Sale Copy 1
+            </td>
+            <td
+              class="row-type"
+            >
+              MVT
+            </td>
+            <td
+              class="row-status DRAFT"
+            >
+              Draft
+            </td>
+            <td
+              class="row-site"
+            />
+            <td>
+              <a
+                class="link-button gray-dark"
+                href="/finalize/7"
+              >
+                Finalize
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>,
+  "container": <div>
+    <h1
+      class="heading"
+    >
+      Dashboard
+    </h1>
+    <div
+      class="wrapper wrapper-input"
+    >
+      <label
+        class="label-input"
+        for="input"
+      >
+        <svg>
+          Search.svg
+        </svg>
+      </label>
+      <input
+        id="input"
+        placeholder="What test are you looking for?"
+        value=""
+      />
+      <div
+        class="wrapper input-info"
+      >
+        7 tests
+      </div>
+    </div>
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th />
+          <th>
+            <button
+              class="button button table-header None"
+            >
+              Name
+              <svg>
+                Chevron-sm.svg
+              </svg>
+            </button>
+          </th>
+          <th>
+            <button
+              class="button button table-header None"
+            >
+              Type
+              <svg>
+                Chevron-sm.svg
+              </svg>
+            </button>
+          </th>
+          <th>
+            <button
+              class="button button table-header None"
+            >
+              Status
+              <svg>
+                Chevron-sm.svg
+              </svg>
+            </button>
+          </th>
+          <th>
+            <button
+              class="button button table-header None"
+            >
+              Site
+              <svg>
+                Chevron-sm.svg
+              </svg>
+            </button>
+          </th>
+          <th />
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="row-table"
+        >
+          <td
+            class="row-indicator siteId-2"
+          />
+          <td
+            class="row-name"
+          >
+            Prototype of the new map
+          </td>
+          <td
+            class="row-type"
+          >
+            Classic
+          </td>
+          <td
+            class="row-status PAUSED"
+          >
+            Paused
+          </td>
+          <td
+            class="row-site"
+          />
+          <td>
+            <a
+              class="link-button"
+              href="/results/1"
+            >
+              Results
+            </a>
+          </td>
+        </tr>
+        <tr
+          class="row-table"
+        >
+          <td
+            class="row-indicator siteId-3"
+          />
+          <td
+            class="row-name"
+          >
+            Dark theme test
+          </td>
+          <td
+            class="row-type"
+          >
+            MVT
+          </td>
+          <td
+            class="row-status DRAFT"
+          >
+            Draft
+          </td>
+          <td
+            class="row-site"
+          />
+          <td>
+            <a
+              class="link-button gray-dark"
+              href="/finalize/2"
+            >
+              Finalize
+            </a>
+          </td>
+        </tr>
+        <tr
+          class="row-table"
+        >
+          <td
+            class="row-indicator siteId-1"
+          />
+          <td
+            class="row-name"
+          >
+            New Year's Sale
+          </td>
+          <td
+            class="row-type"
+          >
+            MVT
+          </td>
+          <td
+            class="row-status STOPPED"
+          >
+            Stopped
+          </td>
+          <td
+            class="row-site"
+          />
+          <td>
+            <a
+              class="link-button"
+              href="/results/3"
+            >
+              Results
+            </a>
+          </td>
+        </tr>
+        <tr
+          class="row-table"
+        >
+          <td
+            class="row-indicator siteId-1"
+          />
+          <td
+            class="row-name"
+          >
+            Order basket redesing
+          </td>
+          <td
+            class="row-type"
+          >
+            Classic
+          </td>
+          <td
+            class="row-status ONLINE"
+          >
+            Online
+          </td>
+          <td
+            class="row-site"
+          />
+          <td>
+            <a
+              class="link-button"
+              href="/results/4"
+            >
+              Results
+            </a>
+          </td>
+        </tr>
+        <tr
+          class="row-table"
+        >
+          <td
+            class="row-indicator siteId-2"
+          />
+          <td
+            class="row-name"
+          >
+            Spring promotion
+          </td>
+          <td
+            class="row-type"
+          >
+            Server-side
+          </td>
+          <td
+            class="row-status DRAFT"
+          >
+            Draft
+          </td>
+          <td
+            class="row-site"
+          />
+          <td>
+            <a
+              class="link-button gray-dark"
+              href="/finalize/5"
+            >
+              Finalize
+            </a>
+          </td>
+        </tr>
+        <tr
+          class="row-table"
+        >
+          <td
+            class="row-indicator siteId-3"
+          />
+          <td
+            class="row-name"
+          >
+            Prototype of a new header
+          </td>
+          <td
+            class="row-type"
+          >
+            Server-side
+          </td>
+          <td
+            class="row-status ONLINE"
+          >
+            Online
+          </td>
+          <td
+            class="row-site"
+          />
+          <td>
+            <a
+              class="link-button"
+              href="/results/6"
+            >
+              Results
+            </a>
+          </td>
+        </tr>
+        <tr
+          class="row-table"
+        >
+          <td
+            class="row-indicator siteId-1"
+          />
+          <td
+            class="row-name"
+          >
+            New Year's Sale Copy 1
+          </td>
+          <td
+            class="row-type"
+          >
+            MVT
+          </td>
+          <td
+            class="row-status DRAFT"
+          >
+            Draft
+          </td>
+          <td
+            class="row-site"
+          />
+          <td>
+            <a
+              class="link-button gray-dark"
+              href="/finalize/7"
+            >
+              Finalize
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Router tests should render DashboardPage for the main path without data table 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h1
+        class="heading"
+      >
+        Dashboard
+      </h1>
+      <div
+        class="wrapper wrapper-input"
+      >
+        <label
+          class="label-input"
+          for="input"
+        >
+          <svg>
+            Search.svg
+          </svg>
+        </label>
+        <input
+          id="input"
+          placeholder="What test are you looking for?"
+          value=""
+        />
+        <div
+          class="wrapper input-info"
+        >
+          0 tests
+        </div>
+      </div>
+      <div
+        class="wrapper page-info"
+      >
+        <div
+          class="wrapper page-info__text"
+        >
+          Your search did not match any results.
+        </div>
+        <button
+          class="button"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <h1
+      class="heading"
+    >
+      Dashboard
+    </h1>
+    <div
+      class="wrapper wrapper-input"
+    >
+      <label
+        class="label-input"
+        for="input"
+      >
+        <svg>
+          Search.svg
+        </svg>
+      </label>
+      <input
+        id="input"
+        placeholder="What test are you looking for?"
+        value=""
+      />
+      <div
+        class="wrapper input-info"
+      >
+        0 tests
+      </div>
+    </div>
+    <div
+      class="wrapper page-info"
+    >
+      <div
+        class="wrapper page-info__text"
+      >
+        Your search did not match any results.
+      </div>
+      <button
+        class="button"
+      >
+        Reset
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Router tests should render Loader for DashboardPage 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="loading-container"
+      >
+        <div
+          class="loading-spinner"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="loading-container"
+    >
+      <div
+        class="loading-spinner"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

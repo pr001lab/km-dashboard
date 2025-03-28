@@ -22,6 +22,7 @@ export enum TitlePageAppRoute {
   Main = 'Dashboard',
   Results = 'Results',
   Finalize = 'Finalize',
+  Error = '404',
 }
 
 export enum Type {
