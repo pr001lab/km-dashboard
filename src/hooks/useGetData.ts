@@ -10,21 +10,24 @@ export const useGetData = (id = '') => {
 
   useEffect(() => {
     setLoading(true);
-    Promise.all([getSites(), getTests()])
-      .then(([sitesResponse, testsResponse]) => {
-        const tests = testsResponse.map((test) => {
-          const site = sitesResponse.find((site) => site.id === test.siteId);
-          test.site = site?.url && getNameUrl(site.url);
-          return test;
-        });
+    const fetchData = async () => {
+      return await Promise.all([getSites(), getTests()])
+        .then(([sitesResponse, testsResponse]) => {
+          const tests = testsResponse.map((test) => {
+            const site = sitesResponse.find((site) => site.id === test.siteId);
+            test.site = site?.url && getNameUrl(site.url);
+            return test;
+          });
 
-        setTests(tests);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-        setLoading(false);
-      });
+          setTests(tests);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error('Error fetching data:', error);
+          setLoading(false);
+        });
+    };
+    fetchData();
   }, []);
 
   const getSites = async () => {
