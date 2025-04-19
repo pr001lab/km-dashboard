@@ -1,5 +1,9 @@
 // export const API = 'http://localhost:3100';
-export const API = '';
+
+export const API =
+  process.env.NODE_ENV === 'development'
+    ? ``
+    : `https://raw.githubusercontent.com/pr001lab/km-dashboard/gh-pages/`;
 
 export enum LoadingStatus {
   Idle = 'idle',
