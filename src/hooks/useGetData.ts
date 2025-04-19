@@ -31,12 +31,24 @@ export const useGetData = (id = '') => {
   }, []);
 
   const getSites = async () => {
-    const { data } = await axios.get<Site[]>(`${API}/${APIRoute.Sites}`);
+    const { data } = await axios.get<Site[]>(
+      `${API}/${APIRoute.SitesJSONFile}`,
+    );
     return data;
   };
 
   const getTests = async () => {
-    const { data } = await axios.get<Test[]>(`${API}/${APIRoute.Tests}/${id}`);
+    await new Promise<void>((resolve) => {
+      setTimeout(() => {
+        resolve();
+      }, 2000);
+    });
+
+    let { data } = await axios.get<Test[]>(`${API}/${APIRoute.TestsJSONFile}`);
+    if (id !== '') {
+      data = data.filter((test) => test.id === parseInt(id, 10));
+    }
+
     return Array.isArray(data) ? data : [data];
   };
 

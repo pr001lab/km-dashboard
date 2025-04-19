@@ -1,4 +1,5 @@
-export const API = 'http://localhost:3100';
+// export const API = 'http://localhost:3100';
+export const API = '';
 
 export enum LoadingStatus {
   Idle = 'idle',
@@ -10,6 +11,8 @@ export enum LoadingStatus {
 export enum APIRoute {
   Sites = 'sites',
   Tests = 'tests',
+  SitesJSONFile = 'sites.json',
+  TestsJSONFile = 'tests.json',
 }
 
 export enum AppRoute {
