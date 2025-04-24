@@ -15,6 +15,14 @@ thead {
     align-items: center;
     gap: 10px;
     padding-right: 12px;
+
+    &.table__thead {
+      display: grid;
+    }
+
+    &.table__thead--mobile {
+      display: none;
+    }
   }
 
   & .table-header {
@@ -32,5 +40,19 @@ thead {
 
   & .table-header:hover {
     background: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  thead {
+    & tr {
+      &.table__thead {
+        display: none;
+      }
+
+      &.table__thead--mobile {
+        display: block;
+      }
+    }
   }
 }

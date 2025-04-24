@@ -2,7 +2,7 @@
 @import './_vars.scss';
 
 body {
-  min-width: 705px;
+  min-width: 320px;
   height: 100vh;
   font-family: $defaultFontFamily;
   font-size: $defaultFontSize;
@@ -10,6 +10,12 @@ body {
   line-height: $defaultLineHeight;
   padding: 41px 48px 49px 52px;
   background-color: $gray-light;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    padding: 10px;
+  }
 }
 
 #root {

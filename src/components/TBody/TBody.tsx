@@ -1,6 +1,6 @@
 import styles from './TBody.module.scss';
 import { TBodyProps } from './TBody.props';
-import { AppRoute, Type } from '../../constant';
+import { AppRoute, tableColumns, Type } from '../../constant';
 import { getTextTransformCapitalize } from '../../utils/utils';
 import LinkButton from '../common/LinkButton/LinkButton';
 
@@ -20,6 +20,18 @@ function TBody({ tests, className, ...props }: TBodyProps) {
 
         return (
           <tr className={styles['row-table']} key={id}>
+            <td className={`${styles['thead']} ${styles['th1']}`}>
+              {getTextTransformCapitalize(tableColumns[0])}
+            </td>
+            <td className={`${styles['thead']} ${styles['th2']}`}>
+              {getTextTransformCapitalize(tableColumns[1])}
+            </td>
+            <td className={`${styles['thead']} ${styles['th3']}`}>
+              {getTextTransformCapitalize(tableColumns[2])}
+            </td>
+            <td className={`${styles['thead']} ${styles['th4']}`}>
+              {getTextTransformCapitalize(tableColumns[3])}
+            </td>
             <td
               className={`${styles['row-indicator']} ${styles[indicatorColor]}`}
             ></td>
@@ -29,7 +41,7 @@ function TBody({ tests, className, ...props }: TBodyProps) {
               {getTextTransformCapitalize(status)}
             </td>
             <td className={styles['row-site']}>{site}</td>
-            <td>
+            <td className={styles['row-actions']}>
               <LinkButton
                 to={linkTo}
                 className={status === 'DRAFT' ? 'gray-dark' : ''}

@@ -25,6 +25,10 @@ tbody {
     border-radius: 3px;
     background: $white;
 
+    & .thead {
+      display: none;
+    }
+
     & .row-indicator {
       height: 100%;
       width: 4px;
@@ -75,5 +79,70 @@ tbody {
   & tr:hover {
     background: $white;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  tbody {
+    & tr {
+      & .thead {
+        display: block;
+        text-align: left;
+        color: $text-third;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      grid-template-columns: 4px 1fr 1fr;
+      grid-template-areas:
+        'row-indicator th1 row-name'
+        'row-indicator th2 row-type'
+        'row-indicator th3 row-status'
+        'row-indicator th4 row-site'
+        'row-indicator row-actions row-actions';
+      align-items: baseline;
+
+      .row-indicator {
+        grid-area: row-indicator;
+      }
+
+      .th1 {
+        grid-area: th1;
+      }
+
+      .row-name {
+        grid-area: row-name;
+      }
+
+      .th2 {
+        grid-area: th2;
+      }
+
+      .row-type {
+        grid-area: row-type;
+      }
+
+      .th3 {
+        grid-area: th3;
+      }
+
+      .row-status {
+        grid-area: row-status;
+      }
+
+      .th4 {
+        grid-area: th4;
+      }
+
+      .row-site {
+        grid-area: row-site;
+      }
+
+      .row-actions {
+        grid-area: row-actions;
+      }
+    }
   }
 }
