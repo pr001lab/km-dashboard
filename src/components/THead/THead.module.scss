@@ -46,12 +46,64 @@ thead {
 @media screen and (max-width: 800px) {
   thead {
     & tr {
+      padding: 0;
+
       &.table__thead {
         display: none;
       }
 
       &.table__thead--mobile {
         display: block;
+
+        & th {
+          display: flex;
+          gap: 20px;
+          margin-bottom: 20px;
+
+          & .custom-select {
+            position: relative;
+            width: 100%;
+
+            &::before,
+            &::after {
+              --size: 0.3rem;
+              position: absolute;
+              content: '';
+              right: 1rem;
+              pointer-events: none;
+            }
+
+            &::before {
+              border-left: var(--size) solid transparent;
+              border-right: var(--size) solid transparent;
+              border-bottom: var(--size) solid black;
+              top: 40%;
+            }
+
+            &::after {
+              border-left: var(--size) solid transparent;
+              border-right: var(--size) solid transparent;
+              border-top: var(--size) solid black;
+              top: 55%;
+            }
+          }
+
+          & :not(.custom-select):not(select) {
+            justify-content: left;
+            width: 97px;
+          }
+
+          & select {
+            appearance: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 0 13px;
+            height: 45px;
+            border-radius: 15px;
+            border: 1px solid #ebebeb;
+            background: #ffffff;
+          }
+        }
       }
     }
   }
