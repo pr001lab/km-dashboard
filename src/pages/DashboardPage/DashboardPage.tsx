@@ -14,7 +14,7 @@ import { getFilterData, getSortData } from '../../utils/utils';
 import Loader from '../../components/common/Loader/Loader';
 
 export const INITIAL_STATE = {
-  colName: '',
+  colName: 'name',
   sortOrder: SortEnum.None,
 };
 

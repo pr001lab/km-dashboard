@@ -60,7 +60,7 @@ thead {
 
         & th {
           display: flex;
-          gap: 20px;
+          gap: 10px;
           margin-bottom: 20px;
 
           & .custom-select {
@@ -93,21 +93,24 @@ thead {
 
           & :not(.custom-select):not(select) {
             justify-content: left;
-            width: 97px;
+            width: 110px;
+            margin: 2px;
           }
 
           & select {
             appearance: none;
             cursor: pointer;
+            height: 45px;
             width: 100%;
             padding: 0 13px;
-            height: 45px;
+            margin: 2px;
             border-radius: 15px;
             border: 1px solid #ebebeb;
             background: #ffffff;
 
             &:focus-visible {
               outline: 2px solid #8686ff;
+              outline-offset: -2px;
             }
           }
         }
