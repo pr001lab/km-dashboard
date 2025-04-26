@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/km-dashboard/static/css/main.f71edf88.css",
-    "main.js": "/km-dashboard/static/js/main.d4e9a4b9.js",
+    "main.js": "/km-dashboard/static/js/main.c3e6e260.js",
     "static/media/Search.svg": "/km-dashboard/static/media/Search.5a18a1eb55a4ff3f0529c2fd0f2a263f.svg",
     "index.html": "/km-dashboard/index.html",
     "static/media/Chevron-sm.svg": "/km-dashboard/static/media/Chevron-sm.d1de174f3037df98f78c5d4f18da4840.svg",
     "static/media/Chevron.svg": "/km-dashboard/static/media/Chevron.b52c32035e3db147183f0ef238e47050.svg",
     "main.f71edf88.css.map": "/km-dashboard/static/css/main.f71edf88.css.map",
-    "main.d4e9a4b9.js.map": "/km-dashboard/static/js/main.d4e9a4b9.js.map"
+    "main.c3e6e260.js.map": "/km-dashboard/static/js/main.c3e6e260.js.map"
   },
   "entrypoints": [
     "static/css/main.f71edf88.css",
-    "static/js/main.d4e9a4b9.js"
+    "static/js/main.c3e6e260.js"
   ]
 }
