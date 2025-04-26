@@ -2,6 +2,7 @@
 <img width="1220" alt="Снимок экрана 2025-04-19 в 23 46 56" src="https://github.com/user-attachments/assets/4ec611b7-0aba-45ad-b988-649eaa049be4" />
 <img width="1224" alt="Снимок экрана 2025-04-19 в 23 47 19" src="https://github.com/user-attachments/assets/6e21d971-5a61-4da2-b40f-4df818d82519" />
 <img width="1219" alt="Снимок экрана 2025-04-19 в 23 47 44" src="https://github.com/user-attachments/assets/37d14c9e-bc09-4a49-ad62-4f92b6002e12" />
+<img width="806" alt="Снимок экрана 2025-04-26 в 14 47 44" src="https://github.com/user-attachments/assets/67f02337-1f4b-482e-9251-b419c363ff3c" />
 
 ## Технические требования
 
