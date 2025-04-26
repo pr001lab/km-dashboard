@@ -1,7 +1,6 @@
 {
   "name": "km-dashboard",
   "version": "0.1.0",
-  "homepage": "https://pr001lab.github.io/km-dashboard",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^6.6.3",
@@ -51,6 +50,14 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/*.props.{ts,tsx}",
+      "!src/**/types.ts",
+      "!src/**/*.d.ts"
     ]
   }
 }
