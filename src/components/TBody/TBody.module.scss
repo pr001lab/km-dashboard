@@ -1,9 +1,7 @@
 @import '../../styles/_vars.scss';
 
-tr {
-}
-
 tbody {
+  overflow-y: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21,7 +19,7 @@ tbody {
     font-size: 12px;
     line-height: normal;
     font-weight: 500;
-    min-height: 70px;
+    //min-height: 70px;
     border-radius: 3px;
     background: $white;
 
@@ -95,13 +93,12 @@ tbody {
         text-transform: uppercase;
       }
 
-      grid-template-columns: 4px 1fr 1fr;
+      grid-template-columns: 4px 1fr 1fr 95px;
       grid-template-areas:
-        'row-indicator th1 row-name'
-        'row-indicator th2 row-type'
-        'row-indicator th3 row-status'
-        'row-indicator th4 row-site'
-        'row-indicator row-actions row-actions';
+        'row-indicator th1 row-name row-actions'
+        'row-indicator th2 row-type .'
+        'row-indicator th3 row-status .'
+        'row-indicator th4 row-site .';
       align-items: baseline;
 
       .row-indicator {
@@ -143,6 +140,20 @@ tbody {
       .row-actions {
         grid-area: row-actions;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  tbody {
+    & tr {
+      grid-template-columns: 4px 1fr 1fr;
+      grid-template-areas:
+        'row-indicator th1 row-name'
+        'row-indicator th2 row-type'
+        'row-indicator th3 row-status'
+        'row-indicator th4 row-site'
+        'row-indicator row-actions row-actions';
     }
   }
 }

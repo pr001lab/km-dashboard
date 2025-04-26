@@ -22,7 +22,9 @@ function FinalizePage() {
     <>
       <Wrapper className={styles['wrapper']}>
         <Heading level="h1">Finalize</Heading>
-        <Heading level="h2">Spring promotion</Heading>
+        <Heading level="h2" className={styles['h2']}>
+          Spring promotion
+        </Heading>
         <table className={styles['table']}>
           <THead />
           <TBody tests={tests} />

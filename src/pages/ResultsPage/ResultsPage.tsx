@@ -22,7 +22,9 @@ function ResultsPage() {
     <>
       <Wrapper className={styles['wrapper']}>
         <Heading level="h1">Results</Heading>
-        <Heading level="h2">Order basket redesing</Heading>
+        <Heading level="h2" className={styles['h2']}>
+          Order basket redesing
+        </Heading>
         <table className={styles['table']}>
           <THead />
           <TBody tests={tests} />

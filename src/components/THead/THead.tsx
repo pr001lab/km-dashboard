@@ -59,7 +59,7 @@ function THead({ sortName, sortOrder, setColSort }: THeadProps) {
 
   return (
     <thead>
-      <tr>
+      <tr className={styles['table__thead']}>
         <th></th>
         {tableColumns.map((item) => (
           <th key={item}>

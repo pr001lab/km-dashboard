@@ -32,7 +32,10 @@ thead {
     line-height: normal;
     text-transform: uppercase;
     padding: 10px;
-    padding-left: 0;
+    padding-bottom: 8px;
+    margin-left: -10px;
+    margin-bottom: 2px;
+    //padding-left: 0;
     width: unset;
     height: unset;
     background: none;
@@ -102,6 +105,10 @@ thead {
             border-radius: 15px;
             border: 1px solid #ebebeb;
             background: #ffffff;
+
+            &:focus-visible {
+              outline: 2px solid #8686ff;
+            }
           }
         }
       }
