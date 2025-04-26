@@ -7,6 +7,7 @@
 <img width="331" alt="Снимок экрана 2025-04-26 в 23 29 34" src="https://github.com/user-attachments/assets/5a0b6be4-f1ff-41ed-9e98-e8e76c68f1b1" />
 
 <img width="806" alt="Снимок экрана 2025-04-26 в 14 47 44" src="https://github.com/user-attachments/assets/67f02337-1f4b-482e-9251-b419c363ff3c" />
+
 ## Технические требования
 
 * Для выполнения этой задачи вам следует использовать create-react-app шаблон приложения (docs).
