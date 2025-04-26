@@ -41,7 +41,7 @@ describe('Router tests', () => {
     mockDataTests.loading = false;
     const view = renderWithRouter();
     const rowsTable = screen.getAllByRole('row');
-    expect(rowsTable).toHaveLength(mockTests.length + 1);
+    expect(rowsTable).toHaveLength(mockTests.length + 2);
     expect(view).toMatchSnapshot();
   });
 

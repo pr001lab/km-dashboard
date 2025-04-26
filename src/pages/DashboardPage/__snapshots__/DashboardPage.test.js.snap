@@ -36,7 +36,43 @@ Object {
         class="table"
       >
         <thead>
-          <tr>
+          <tr
+            class="table__thead--mobile"
+          >
+            <th>
+              <div
+                class="custom-select"
+              >
+                <select
+                  class="table-header"
+                >
+                  <option>
+                    name
+                  </option>
+                  <option>
+                    type
+                  </option>
+                  <option>
+                    status
+                  </option>
+                  <option>
+                    site
+                  </option>
+                </select>
+              </div>
+              <button
+                class="button button table-header None"
+              >
+                SortOrder
+                <svg>
+                  Chevron-sm.svg
+                </svg>
+              </button>
+            </th>
+          </tr>
+          <tr
+            class="table__thead"
+          >
             <th />
             <th>
               <button
@@ -86,6 +122,26 @@ Object {
             class="row-table"
           >
             <td
+              class="thead th1"
+            >
+              Name
+            </td>
+            <td
+              class="thead th2"
+            >
+              Type
+            </td>
+            <td
+              class="thead th3"
+            >
+              Status
+            </td>
+            <td
+              class="thead th4"
+            >
+              Site
+            </td>
+            <td
               class="row-indicator siteId-2"
             />
             <td
@@ -106,7 +162,9 @@ Object {
             <td
               class="row-site"
             />
-            <td>
+            <td
+              class="row-actions"
+            >
               <a
                 class="link-button"
                 href="/results/1"
@@ -118,6 +176,26 @@ Object {
           <tr
             class="row-table"
           >
+            <td
+              class="thead th1"
+            >
+              Name
+            </td>
+            <td
+              class="thead th2"
+            >
+              Type
+            </td>
+            <td
+              class="thead th3"
+            >
+              Status
+            </td>
+            <td
+              class="thead th4"
+            >
+              Site
+            </td>
             <td
               class="row-indicator siteId-3"
             />
@@ -139,7 +217,9 @@ Object {
             <td
               class="row-site"
             />
-            <td>
+            <td
+              class="row-actions"
+            >
               <a
                 class="link-button gray-dark"
                 href="/finalize/2"
@@ -151,6 +231,26 @@ Object {
           <tr
             class="row-table"
           >
+            <td
+              class="thead th1"
+            >
+              Name
+            </td>
+            <td
+              class="thead th2"
+            >
+              Type
+            </td>
+            <td
+              class="thead th3"
+            >
+              Status
+            </td>
+            <td
+              class="thead th4"
+            >
+              Site
+            </td>
             <td
               class="row-indicator siteId-1"
             />
@@ -172,7 +272,9 @@ Object {
             <td
               class="row-site"
             />
-            <td>
+            <td
+              class="row-actions"
+            >
               <a
                 class="link-button"
                 href="/results/3"
@@ -184,6 +286,26 @@ Object {
           <tr
             class="row-table"
           >
+            <td
+              class="thead th1"
+            >
+              Name
+            </td>
+            <td
+              class="thead th2"
+            >
+              Type
+            </td>
+            <td
+              class="thead th3"
+            >
+              Status
+            </td>
+            <td
+              class="thead th4"
+            >
+              Site
+            </td>
             <td
               class="row-indicator siteId-1"
             />
@@ -205,7 +327,9 @@ Object {
             <td
               class="row-site"
             />
-            <td>
+            <td
+              class="row-actions"
+            >
               <a
                 class="link-button"
                 href="/results/4"
@@ -217,6 +341,26 @@ Object {
           <tr
             class="row-table"
           >
+            <td
+              class="thead th1"
+            >
+              Name
+            </td>
+            <td
+              class="thead th2"
+            >
+              Type
+            </td>
+            <td
+              class="thead th3"
+            >
+              Status
+            </td>
+            <td
+              class="thead th4"
+            >
+              Site
+            </td>
             <td
               class="row-indicator siteId-2"
             />
@@ -238,7 +382,9 @@ Object {
             <td
               class="row-site"
             />
-            <td>
+            <td
+              class="row-actions"
+            >
               <a
                 class="link-button gray-dark"
                 href="/finalize/5"
@@ -250,6 +396,26 @@ Object {
           <tr
             class="row-table"
           >
+            <td
+              class="thead th1"
+            >
+              Name
+            </td>
+            <td
+              class="thead th2"
+            >
+              Type
+            </td>
+            <td
+              class="thead th3"
+            >
+              Status
+            </td>
+            <td
+              class="thead th4"
+            >
+              Site
+            </td>
             <td
               class="row-indicator siteId-3"
             />
@@ -271,7 +437,9 @@ Object {
             <td
               class="row-site"
             />
-            <td>
+            <td
+              class="row-actions"
+            >
               <a
                 class="link-button"
                 href="/results/6"
@@ -283,6 +451,26 @@ Object {
           <tr
             class="row-table"
           >
+            <td
+              class="thead th1"
+            >
+              Name
+            </td>
+            <td
+              class="thead th2"
+            >
+              Type
+            </td>
+            <td
+              class="thead th3"
+            >
+              Status
+            </td>
+            <td
+              class="thead th4"
+            >
+              Site
+            </td>
             <td
               class="row-indicator siteId-1"
             />
@@ -304,7 +492,9 @@ Object {
             <td
               class="row-site"
             />
-            <td>
+            <td
+              class="row-actions"
+            >
               <a
                 class="link-button gray-dark"
                 href="/finalize/7"
@@ -349,7 +539,43 @@ Object {
       class="table"
     >
       <thead>
-        <tr>
+        <tr
+          class="table__thead--mobile"
+        >
+          <th>
+            <div
+              class="custom-select"
+            >
+              <select
+                class="table-header"
+              >
+                <option>
+                  name
+                </option>
+                <option>
+                  type
+                </option>
+                <option>
+                  status
+                </option>
+                <option>
+                  site
+                </option>
+              </select>
+            </div>
+            <button
+              class="button button table-header None"
+            >
+              SortOrder
+              <svg>
+                Chevron-sm.svg
+              </svg>
+            </button>
+          </th>
+        </tr>
+        <tr
+          class="table__thead"
+        >
           <th />
           <th>
             <button
@@ -399,6 +625,26 @@ Object {
           class="row-table"
         >
           <td
+            class="thead th1"
+          >
+            Name
+          </td>
+          <td
+            class="thead th2"
+          >
+            Type
+          </td>
+          <td
+            class="thead th3"
+          >
+            Status
+          </td>
+          <td
+            class="thead th4"
+          >
+            Site
+          </td>
+          <td
             class="row-indicator siteId-2"
           />
           <td
@@ -419,7 +665,9 @@ Object {
           <td
             class="row-site"
           />
-          <td>
+          <td
+            class="row-actions"
+          >
             <a
               class="link-button"
               href="/results/1"
@@ -431,6 +679,26 @@ Object {
         <tr
           class="row-table"
         >
+          <td
+            class="thead th1"
+          >
+            Name
+          </td>
+          <td
+            class="thead th2"
+          >
+            Type
+          </td>
+          <td
+            class="thead th3"
+          >
+            Status
+          </td>
+          <td
+            class="thead th4"
+          >
+            Site
+          </td>
           <td
             class="row-indicator siteId-3"
           />
@@ -452,7 +720,9 @@ Object {
           <td
             class="row-site"
           />
-          <td>
+          <td
+            class="row-actions"
+          >
             <a
               class="link-button gray-dark"
               href="/finalize/2"
@@ -464,6 +734,26 @@ Object {
         <tr
           class="row-table"
         >
+          <td
+            class="thead th1"
+          >
+            Name
+          </td>
+          <td
+            class="thead th2"
+          >
+            Type
+          </td>
+          <td
+            class="thead th3"
+          >
+            Status
+          </td>
+          <td
+            class="thead th4"
+          >
+            Site
+          </td>
           <td
             class="row-indicator siteId-1"
           />
@@ -485,7 +775,9 @@ Object {
           <td
             class="row-site"
           />
-          <td>
+          <td
+            class="row-actions"
+          >
             <a
               class="link-button"
               href="/results/3"
@@ -497,6 +789,26 @@ Object {
         <tr
           class="row-table"
         >
+          <td
+            class="thead th1"
+          >
+            Name
+          </td>
+          <td
+            class="thead th2"
+          >
+            Type
+          </td>
+          <td
+            class="thead th3"
+          >
+            Status
+          </td>
+          <td
+            class="thead th4"
+          >
+            Site
+          </td>
           <td
             class="row-indicator siteId-1"
           />
@@ -518,7 +830,9 @@ Object {
           <td
             class="row-site"
           />
-          <td>
+          <td
+            class="row-actions"
+          >
             <a
               class="link-button"
               href="/results/4"
@@ -530,6 +844,26 @@ Object {
         <tr
           class="row-table"
         >
+          <td
+            class="thead th1"
+          >
+            Name
+          </td>
+          <td
+            class="thead th2"
+          >
+            Type
+          </td>
+          <td
+            class="thead th3"
+          >
+            Status
+          </td>
+          <td
+            class="thead th4"
+          >
+            Site
+          </td>
           <td
             class="row-indicator siteId-2"
           />
@@ -551,7 +885,9 @@ Object {
           <td
             class="row-site"
           />
-          <td>
+          <td
+            class="row-actions"
+          >
             <a
               class="link-button gray-dark"
               href="/finalize/5"
@@ -563,6 +899,26 @@ Object {
         <tr
           class="row-table"
         >
+          <td
+            class="thead th1"
+          >
+            Name
+          </td>
+          <td
+            class="thead th2"
+          >
+            Type
+          </td>
+          <td
+            class="thead th3"
+          >
+            Status
+          </td>
+          <td
+            class="thead th4"
+          >
+            Site
+          </td>
           <td
             class="row-indicator siteId-3"
           />
@@ -584,7 +940,9 @@ Object {
           <td
             class="row-site"
           />
-          <td>
+          <td
+            class="row-actions"
+          >
             <a
               class="link-button"
               href="/results/6"
@@ -596,6 +954,26 @@ Object {
         <tr
           class="row-table"
         >
+          <td
+            class="thead th1"
+          >
+            Name
+          </td>
+          <td
+            class="thead th2"
+          >
+            Type
+          </td>
+          <td
+            class="thead th3"
+          >
+            Status
+          </td>
+          <td
+            class="thead th4"
+          >
+            Site
+          </td>
           <td
             class="row-indicator siteId-1"
           />
@@ -617,7 +995,9 @@ Object {
           <td
             class="row-site"
           />
-          <td>
+          <td
+            class="row-actions"
+          >
             <a
               class="link-button gray-dark"
               href="/finalize/7"

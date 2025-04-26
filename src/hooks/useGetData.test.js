@@ -78,8 +78,8 @@ describe('useGetData tests', () => {
 
     const { result } = renderHook(() => useGetData());
 
-    await waitFor(() => {
-      expect(result.current).toEqual(mockOriginalData);
+    await waitFor(() => expect(result.current).toEqual(mockOriginalData), {
+      timeout: 2100, //for get data from json-files
     });
   });
 });

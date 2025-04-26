@@ -60,6 +60,26 @@ Object {
               class="row-table"
             >
               <td
+                class="thead th1"
+              >
+                Name
+              </td>
+              <td
+                class="thead th2"
+              >
+                Type
+              </td>
+              <td
+                class="thead th3"
+              >
+                Status
+              </td>
+              <td
+                class="thead th4"
+              >
+                Site
+              </td>
+              <td
                 class="row-indicator siteId-3"
               />
               <td
@@ -80,7 +100,9 @@ Object {
               <td
                 class="row-site"
               />
-              <td>
+              <td
+                class="row-actions"
+              >
                 <a
                   class="link-button gray-dark"
                   href="/finalize/2"
@@ -167,6 +189,26 @@ Object {
             class="row-table"
           >
             <td
+              class="thead th1"
+            >
+              Name
+            </td>
+            <td
+              class="thead th2"
+            >
+              Type
+            </td>
+            <td
+              class="thead th3"
+            >
+              Status
+            </td>
+            <td
+              class="thead th4"
+            >
+              Site
+            </td>
+            <td
               class="row-indicator siteId-3"
             />
             <td
@@ -187,7 +229,9 @@ Object {
             <td
               class="row-site"
             />
-            <td>
+            <td
+              class="row-actions"
+            >
               <a
                 class="link-button gray-dark"
                 href="/finalize/2"
